@@ -1,7 +1,3 @@
-os:
-  - os1
-  - os2
-
 configuration:
   - conf1
   - conf2
