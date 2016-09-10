@@ -4,9 +4,9 @@ environment:
   matrix:
   - var_env1_0: ya
     var_env1_1: yaa
-  - var_env1_0: ya
-    var_env1_1: yaa
+  - var_env1_0: yo
+    var_env1_1: yoo
   
 
 init:
-  - echo VAR1: %something_var1%
+  - echo VAR1 %something_var1%
