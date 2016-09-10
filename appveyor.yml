@@ -25,3 +25,7 @@ build: off
 before_build:
   - echo var1 %var1%
   - echo var_env1_1 %var_env1_1%
+
+build_script:
+  - echo var2 %var2%
+  - echo var_env1_1 %var_env1_1%
