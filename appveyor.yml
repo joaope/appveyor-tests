@@ -17,7 +17,7 @@ environment:
   
 
 init:
-  - echo var1 %var1%
+  - echo var1 %var1% %CONFIGURATION% %PLATFORM%
   - echo var_env1_0 %var_env1_0%
 
 build: off
