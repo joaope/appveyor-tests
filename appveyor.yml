@@ -1,5 +1,12 @@
 -environment
   var1: something_var1
+  var2: something_var2
+  matrix:
+  - var_env1_0: ya
+    var_env1_1: yaa
+  - var_env1_0: ya
+    var_env1_1: yaa
+  
 
 -init
   - echo VAR1: %something_var1%
