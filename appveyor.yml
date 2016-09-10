@@ -1,3 +1,15 @@
+os:
+  - os1
+  - os2
+
+configuration:
+  - conf1
+  - conf2
+
+platform:
+  - platform1
+  - platform2
+
 environment:
   var1: something_var1
   var2: something_var2
