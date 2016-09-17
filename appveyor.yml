@@ -21,8 +21,8 @@ environment:
 init:
   - echo var1 %var1% %CONFIGURATION% %PLATFORM%
   - echo var_env1_0 %var_env1_0%
-  - echo number: %APPVEYOR_BUILD_NUMBER%
-  - echo version: %APPVEYOR_BUILD_VERSION%
+  - echo number %APPVEYOR_BUILD_NUMBER%
+  - echo version %APPVEYOR_BUILD_VERSION%
 
 build: off
 
