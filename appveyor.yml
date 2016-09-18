@@ -16,6 +16,13 @@ environment:
     var_env1_1: yaa
   - var_env1_0: yo
     var_env1_1: yoo
+
+assembly_info:
+  patch: true
+  file: AssemblyInfo.cs
+  assembly_version: "2.2.{build}"
+  assembly_file_version: "{version}"
+  assembly_informational_version: "{version}"
   
 
 init:
@@ -30,6 +37,7 @@ before_build:
   - echo before build
   - echo var1 %var1%
   - echo var_env1_1 %var_env1_1%
+  - type AssemblyInfo.cs
 
 build_script:
   - echo var2 %var2%
