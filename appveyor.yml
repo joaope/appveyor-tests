@@ -1,4 +1,4 @@
-version: 1.0.0-$(APPVEYOR_BUILD_NUMBER)
+version: 1.0.0-{build}
 
 configuration:
   - conf1
