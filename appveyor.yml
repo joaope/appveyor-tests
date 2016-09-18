@@ -9,7 +9,7 @@ platform:
   - platform2
 
 environment:
-  var1: something_var1
+  var1: something-var1
   var2: something_var2
   matrix:
   - var_env1_0: ya
@@ -27,7 +27,7 @@ assembly_info:
 
 init:
   - echo var1 %var1% %CONFIGURATION% %PLATFORM%
-  - echo var_env1_0 %var_env1_0%
+  - echo var_env1_0 %var_env1_0% %something-var1%
   - echo number %APPVEYOR_BUILD_NUMBER%
   - echo version %APPVEYOR_BUILD_VERSION%
 
