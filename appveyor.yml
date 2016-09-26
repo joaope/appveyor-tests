@@ -34,6 +34,8 @@ init:
   - echo version %APPVEYOR_BUILD_VERSION%
   - echo %APPVEYOR_BUILD_FOLDER%
   - echo %~dp0
+  - echo %CI%
+  - echo %APPVEYOR%
 
 build: off
 
