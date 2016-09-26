@@ -1,5 +1,7 @@
 version: 1.0.0-{build}
 
+
+
 configuration:
   - conf1
   - conf2
@@ -30,6 +32,7 @@ init:
   - echo var_env1_0 %var_env1_0% %something-var1%
   - echo number %APPVEYOR_BUILD_NUMBER%
   - echo version %APPVEYOR_BUILD_VERSION%
+  - echo %APPVEYOR_BUILD_FOLDER%
 
 build: off
 
@@ -38,6 +41,7 @@ before_build:
   - echo var1 %var1%
   - echo var_env1_1 %var_env1_1%
   - type AssemblyInfo.cs
+  - echo %APPVEYOR_BUILD_FOLDER%
 
 build_script:
   - echo var2 %var2%
